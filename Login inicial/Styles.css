@@ -19,6 +19,7 @@
 
     /*      Fuentes para subtitulos       */
     --Fuente_subtitulos: 'Work Sans' , sans-serif, italic ;
+
 }
 
 body{
@@ -50,9 +51,39 @@ body{
     flex-direction: column;
 }
 
+@keyframes opacidad {
+    0%{
+        opacity: .2;
+    }
+    25%{
+        opacity: .4;
+    }
+    50%{
+        opacity: .6;
+    }
+    75%{
+        opacity: .4;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
 .title {
     color: var(--Color_Titulos);
     font-family: var(--Fuente_titulos);
+    
+    /*      Animacion       */
+    animation-name: opacidad;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.contenedor_titulo {
+    
+    border-bottom: 2px solid;
+    border-color: var(--Color_bordes);
 }
 
 .Subtitulo {
@@ -102,4 +133,19 @@ body{
     color: var(--Color_Titulos);
     font-family: var(--Fuente_titulos);
     font-size: 20px;
+
+    transition: .5s;
 }
+
+.boton_ingresar:hover {
+    cursor: pointer;
+    background-color: var(--Color_Subtitulos);
+    color: white;
+    
+}
+
+.contenedor_boton-tema {
+    width: 100%;
+    text-align: end;
+}
+
