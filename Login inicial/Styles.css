@@ -1,0 +1,105 @@
+:root {
+    /*      Variables para colores claros       */
+    --Fondo_Claro: silver;
+
+    /*      Variables para colores oscuros       */
+    --Fondo_Oscuro: black;
+
+    /*      Variables para colores de bordes       */
+    --Color_bordes: turquoise;
+
+    /*      Variables para colores de titulos       */
+    --Color_Titulos: turquoise;
+
+    /*      Variables para colores de subtitulos       */
+    --Color_Subtitulos: rgba(64, 224, 208, 0.7);
+
+    /*      Fuentes para titulos       */
+    --Fuente_titulos: 'Work Sans', sans-serif;
+
+    /*      Fuentes para subtitulos       */
+    --Fuente_subtitulos: 'Work Sans' , sans-serif, italic ;
+}
+
+body{
+    background-color: var(--Fondo_Oscuro);
+    display: flexbox;
+}
+
+.container {
+
+    border: 2px solid;
+    border-color: var(--Color_bordes);
+    
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+
+    width: 600px;
+    height: 400px;
+    
+    /*      Centrando contenedor        */
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    margin: -25px 0 0 -25px;
+
+    /*      Centrando elementos internos        */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--Color_Titulos);
+    font-family: var(--Fuente_titulos);
+}
+
+.Subtitulo {
+    color: var(--Color_Subtitulos) ;
+    font-family: var(--Fuente_subtitulos);
+    font-style: italic;
+}
+
+.input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-bottom-color: var(--Color_bordes);
+    
+    color: var(--Color_Subtitulos);
+
+    /*      Quita margenes al hacer click en el input       */
+    outline: none;
+}
+
+.contenedor_campos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_subtitulo {
+    width: 80%;
+}
+
+.contenedor_boton {
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton_ingresar {
+    background-color: transparent;
+    border: solid 1px;
+    border-color: var(--Color_bordes);
+
+    width: 80%;
+    color: var(--Color_Titulos);
+    font-family: var(--Fuente_titulos);
+    font-size: 20px;
+}
