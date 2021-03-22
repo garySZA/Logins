@@ -75,7 +75,7 @@ body{
     
     /*      Animacion       */
     animation-name: opacidad;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
@@ -127,6 +127,7 @@ body{
 .boton_ingresar {
     background-color: transparent;
     border: solid 1px;
+    border-radius: 10px;
     border-color: var(--Color_bordes);
 
     width: 80%;
@@ -141,7 +142,7 @@ body{
     cursor: pointer;
     background-color: var(--Color_Subtitulos);
     color: white;
-    
+    width: 100%;
 }
 
 .contenedor_boton-tema {
